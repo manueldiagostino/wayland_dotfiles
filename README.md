@@ -9,5 +9,7 @@ Assuming you have already installed Wayland on your distro, the following are **
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl)
 - [swaybg](https://github.com/swaywm/swaybg)
 - [nautilus](https://github.com/GNOME/nautilus)
+- [swaylock-effects](https://github.com/mortie/swaylock-effects)
+- [swayidle](https://github.com/swaywm/swayidle)
 
 > Remember to change */home/manuel* in `.config/hypr/hyprland.conf` with your current home path.
