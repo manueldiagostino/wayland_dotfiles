@@ -58,6 +58,12 @@ cd swaybg-git/
 makepkg -si
 cd ..
 
+# nautilus
+git clone https://aur.archlinux.org/nautilus-git.git 
+cd nautilus-git/
+makepkg -si
+cd ..
+
 # Remove files
 cd .. && rm -rf ./tmp_installer/
 
