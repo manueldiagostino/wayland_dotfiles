@@ -13,3 +13,11 @@ Assuming you have already installed Wayland on your distro, the following are **
 - [swayidle](https://github.com/swaywm/swayidle)
 
 > Remember to change */home/manuel* in `.config/hypr/hyprland.conf` with your current home path.
+
+## Arch users only
+You can use
+```
+chmod +x install.sh
+./install.sh
+```
+to automate the entire installation in your *home* dir (*.rc* files not included).
