@@ -8,6 +8,8 @@
 # Starts a scan of available broadcasting SSIDs
 # nmcli dev wifi rescan
 
+killall wofi -9
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 FIELDS=SSID,SECURITY
@@ -26,7 +28,7 @@ fi
 yad --title="wifi4wofi" --text="  Scanning for networks..." --no-buttons width=200 height=50 --undecorated --splash --skip-taskbar --text-align=center &
 # yad --title="wifi4wofi scan" --text="Scanning for networks" --no-buttons width=300 height=300 --undecorated --splash --fixed --posx=1605 --posy=15 --skip-taskbar &
 LIST=$(nmcli --fields "$FIELDS" device wifi list | sed '/^--/d')
-killall yad -9 -r "wifi4wofi scan"
+killall yad -9 -r "wifi4wofi"
 # For some reason wofi always approximates character width 2 short... hmmm
 RWIDTH=$(($(echo "$LIST" | head -n 1 | awk '{print length($0); }')*10))
 # Dynamically change the height of the wofi menu

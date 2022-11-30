@@ -11,6 +11,4 @@ then
 	hyprctl dispatch dpms off eDP-1 
 fi
 
-systemctl --user status xdg-desktop-portal
-
 exit 0

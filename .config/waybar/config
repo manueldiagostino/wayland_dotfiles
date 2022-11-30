@@ -107,7 +107,9 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         //"format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "/home/manuel/.config/wofi/wifi4wofi",	
+        "on-click": "/home/manuel/.config/wofi/wifi4wofi",
+		"on-click-middle": "killall wofi -9",
+		"on-click-right": "killall wofi -9"	
     },
 
 	"pulseaudio": {
