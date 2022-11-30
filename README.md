@@ -17,6 +17,7 @@ Assuming you have already installed Wayland on your distro, the following are **
 ## Arch users only
 You can use
 ```
+cd .wayland_dotfiles/
 chmod +x install.sh
 ./install.sh
 ```
