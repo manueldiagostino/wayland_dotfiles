@@ -1,0 +1,16 @@
+#!/bin/bash
+
+activew_json=$(hyprctl -j activewindow)
+monitors_json=$(hyprctl -j monitors)
+
+x=$(echo $activew_json | jq '.at[0]')
+y=$(echo $activew_json | jq '.at[1]')
+width=$(echo $activew_json | jq '.size[0]')
+height=$(echo $activew_json | jq '.size[1]')
+
+monitor_num=$(echo $activew_json | jq '.monitor')
+monitor_name=$(echo $monitors_json | jq --argjson num "$monitor_num" '.[$num].name')
+
+coordinates="$x,$y ${width}x${height}"
+
+grim -o $monitor_name -g "$coordinates" && dunstify -a "screenshot" -h string:x-dunst:screen "Active window captured"

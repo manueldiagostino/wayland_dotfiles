@@ -8,5 +8,6 @@ export XCURSOR_SIZE=24
 export SDL_VIDEODRIVER=wayland
 export QT_QPA_PLATFORM=wayland
 # export XDG_CURRENT_DESKTOP=sway
+export GRIM_DEFAULT_DIR=/home/manuel/Immagini/Screenshot/
 
 exec Hyprland
