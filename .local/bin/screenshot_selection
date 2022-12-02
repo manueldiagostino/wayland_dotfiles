@@ -13,7 +13,6 @@ echo $coordinates
 
 newfile_path="$HOME/Immagini/Screenshot/$(date '+%y%m%d_%Hh%Mm%Ss').jpeg"
 
-grim -t jpeg -q 100 -o $monitor_name -g "$coordinates" $newfile_path && \
-	dunstify -a "screenshot" -h string:x-dunst:screen "Screenshot saved"
-
-imv $newfile_path
+grim -t jpeg -q 100 -o $monitor_name -g "$coordinates" $newfile_path
+imv $newfile_path &
+dunstify -a "screenshot" -h string:x-dunst:screen "Screenshot saved"
