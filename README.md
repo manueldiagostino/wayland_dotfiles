@@ -11,6 +11,8 @@ Assuming you have already installed Wayland on your distro, the following are **
 - [nautilus](https://github.com/GNOME/nautilus)
 - [swaylock-effects](https://github.com/mortie/swaylock-effects)
 - [swayidle](https://github.com/swaywm/swayidle)
+- [imv](https://github.com/eXeC64/imv)
+- [wlrobs-hg](https://aur.archlinux.org/wlrobs-hg.git)
 
 > Remember to change */home/manuel* in `.config/hypr/hyprland.conf` with your current home path.
 

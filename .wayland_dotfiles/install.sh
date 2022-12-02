@@ -64,6 +64,31 @@ cd nautilus-git/
 makepkg -si
 cd ..
 
+# swaylock-effects
+git clone https://aur.archlinux.org/swaylock-effects.git
+cd swaylock-effects/
+makepkg -si
+cd ..
+
+# swayidle
+git clone https://aur.archlinux.org/swayidle-git.git
+cd swayidle-git/
+makepkg -si
+cd ..
+
+# imv
+git clone https://aur.archlinux.org/imv-git.git
+cd imv-git/
+makepkg -si
+cd ..
+
+# wlrobs-hg
+git clone https://aur.archlinux.org/wlrobs-hg.git
+cd wlrobs-hg/
+makepkg -si
+cd ..
+
+
 # Remove files
 cd .. && rm -rf ./tmp_installer/
 
