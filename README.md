@@ -1,5 +1,7 @@
 # wayland_dotfiles
 
+Hi, this is my personal linux-rice :)
+
 Assuming you have already installed Wayland on your distro, the following are **required**:
 - [Hyprland](https://github.com/hyprwm/Hyprland)
 - [waybar](https://github.com/Alexays/Waybar)
@@ -24,3 +26,10 @@ chmod +x install.sh
 ./install.sh
 ```
 to automate the entire installation in your *home* dir (*.rc* files not included).
+
+# Gallery
+![screen1](https://github.com/manueldiagostino/wayland_dotfiles/blob/main/Immagini/Screenshot/screen_1.jpeg)
+<br>
+![screen2](https://github.com/manueldiagostino/wayland_dotfiles/blob/main/Immagini/Screenshot/screen_2.jpeg)
+<br>
+![screen3](https://github.com/manueldiagostino/wayland_dotfiles/blob/main/Immagini/Screenshot/screen_3.jpeg)
