@@ -10,7 +10,8 @@
    
 	"custom/power_menu": {
 		"format": "⌘",
-		"on-click": "$HOME/.config/wofi/power_menu.sh"	
+		"on-click": "$HOME/.config/wofi/power_menu.sh",
+		"on-click-right": "killall -9 wofi"
 	},
  
     "wlr/workspaces": {
@@ -108,8 +109,7 @@
         "format-disconnected": "Disconnected ⚠",
         //"format-alt": "{ifname}: {ipaddr}/{cidr}",
         "on-click": "/home/manuel/.config/wofi/wifi4wofi",
-		"on-click-middle": "killall wofi -9",
-		"on-click-right": "killall wofi -9"	
+		"on-click-right": "killall -9 wofi"	
     },
 
 	"pulseaudio": {

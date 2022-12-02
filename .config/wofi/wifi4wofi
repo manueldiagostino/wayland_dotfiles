@@ -8,7 +8,7 @@
 # Starts a scan of available broadcasting SSIDs
 # nmcli dev wifi rescan
 
-killall wofi -9
+killall -9 wofi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
