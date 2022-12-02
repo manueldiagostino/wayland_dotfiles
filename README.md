@@ -28,8 +28,8 @@ chmod +x install.sh
 to automate the entire installation in your *home* dir (*.rc* files not included).
 
 # Gallery
-![screen1](https://github.com/manueldiagostino/wayland_dotfiles/blob/main/Immagini/Screenshot/screen_1.jpeg)
+![screen1](https://github.com/manueldiagostino/wayland_dotfiles/blob/main/.wayland_dotfiles/screen_1.jpeg)
 <br>
-![screen2](https://github.com/manueldiagostino/wayland_dotfiles/blob/main/Immagini/Screenshot/screen_2.jpeg)
+![screen2](https://github.com/manueldiagostino/wayland_dotfiles/blob/main/.wayland_dotfiles/screen_2.jpeg)
 <br>
-![screen3](https://github.com/manueldiagostino/wayland_dotfiles/blob/main/Immagini/Screenshot/screen_3.jpeg)
+![screen3](https://github.com/manueldiagostino/wayland_dotfiles/blob/main/.wayland_dotfiles/screen_3.jpeg)
