@@ -12,5 +12,12 @@ monitor_num=$(echo $activew_json | jq '.monitor')
 monitor_name=$(echo $monitors_json | jq --argjson num "$monitor_num" '.[$num].name')
 
 coordinates="$x,$y ${width}x${height}"
+echo $monitor_name
+echo $coordinates
 
-grim -o $monitor_name -g "$coordinates" && dunstify -a "screenshot" -h string:x-dunst:screen "Active window captured"
+newfile_path="$HOME/Immagini/Screenshot/$(date '+%y%m%d_%Hh%Mm%Ss').jpeg"
+
+grim -t jpeg -q 100 -o $monitor_name -g "$coordinates" $newfile_path && \
+	dunstify -a "screenshot" -h string:x-dunst:screen "Active window captured"
+
+imv $newfile_path
