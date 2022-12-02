@@ -1,0 +1,15 @@
+#!/bin/bash
+
+activew_json=$(hyprctl -j activewindow)
+monitors_json=$(hyprctl -j monitors)
+
+monitor_num=$(echo $activew_json | jq '.monitor')
+monitor_name=$(echo $monitors_json | jq --argjson num "$monitor_num" '.[$num].name')
+monitor_name=$(echo $monitor_name | tr -d '"')
+echo $monitor_name
+
+newfile_path="$HOME/Immagini/Screenshot/$(date '+%y%m%d_%Hh%Mm%Ss').jpeg"
+
+grim -t jpeg -q 100 -o $monitor_name $newfile_path
+imv $newfile_path &
+dunstify -a "screenshot" -h string:x-dunst:screen "Screen captured"
