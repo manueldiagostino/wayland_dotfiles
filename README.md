@@ -1,8 +1,8 @@
 # wayland_dotfiles
 
-<div align = center>
-    ![Badge Language](https://img.shields.io/github/languages/top/manueldiagostino/wayland_dotfiles)
-</div>
+![GitHub top language](https://img.shields.io/github/languages/top/manueldiagostino/wayland_dotfiles)
+
+<br>
 
 Hi, this is my personal linux-rice :)
 
