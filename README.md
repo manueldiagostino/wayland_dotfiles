@@ -1,5 +1,9 @@
 # wayland_dotfiles
 
+<div align = center>
+    -[Badge Language](https://img.shields.io/github/languages/top/manueldiagostino/wayland_dotfiles)
+</div>
+
 Hi, this is my personal linux-rice :)
 
 Assuming you have already installed Wayland on your distro, the following are **required**:
