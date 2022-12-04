@@ -1,7 +1,7 @@
 # wayland_dotfiles
 
-<div align="center">
-    <img src="https://img.shields.io/github/languages/top/manueldiagostino/wayland_dotfiles"
+<div align = "center">
+    <img src="https://img.shields.io/github/languages/top/manueldiagostino/wayland_dotfiles">
 </div>
 
 <br>
