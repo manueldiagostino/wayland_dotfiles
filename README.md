@@ -1,6 +1,8 @@
 # wayland_dotfiles
 
-![GitHub top language](https://img.shields.io/github/languages/top/manueldiagostino/wayland_dotfiles)
+<div align="center">
+<a href="">![GitHub top language](https://img.shields.io/github/languages/top/manueldiagostino/wayland_dotfiles)</a>
+</div>
 
 <br>
 
