@@ -10,7 +10,7 @@
    
 	"custom/power_menu": {
 		"format": "⌘",
-		"on-click": "$HOME/.config/wofi/power_menu.sh",
+		"on-click": "/home/manuel/.config/wofi/power_menu.sh",
 		"on-click-right": "killall -9 wofi"
 	},
  

@@ -2,7 +2,6 @@
 
 # kill other power_menu.sh processes
 # list=$(ps -ef | grep /bin/bash /home/manuel/.config/wofi/power_menu.sh | awk '{ print $2 }')
-
 killall -9 wofi
 
 entries="⇠ Logout\n⏾ Suspend\n⭮ Reboot\n⏻ Shutdown"

@@ -55,7 +55,7 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-set clipboard=unnamedplus
+set clipboard^=unnamed,unnamedplus
 
 " Use a line cursor within insert mode and a block cursor everywhere else.
 "
@@ -70,8 +70,8 @@ set clipboard=unnamedplus
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
-" "map <C-c> "+y
-" "map <C-v> "+p
+" map <C-c> +y
+" map <C-v> +p
 
 vmap <C-c> "+yi
 vmap <C-x> "+c
