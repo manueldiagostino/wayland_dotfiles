@@ -21,6 +21,7 @@ Assuming you have already installed Wayland on your distro, the following are **
 - [swayidle](https://github.com/swaywm/swayidle)
 - [imv](https://github.com/eXeC64/imv)
 - [wlrobs-hg](https://aur.archlinux.org/wlrobs-hg.git)
+- [Blueman](https://wiki.archlinux.org/title/Blueman)
 
 > Remember to change */home/manuel* in `.config/hypr/hyprland.conf` with your current home path.
 

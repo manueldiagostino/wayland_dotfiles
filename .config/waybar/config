@@ -6,13 +6,13 @@
 
     "modules-left": ["custom/power_menu", "wlr/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "network", "battery"],
+    "modules-right": ["idle_inhibitor", "pulseaudio", "network", "bluetooth", "battery"],
    
 	"custom/power_menu": {
 		"format": "⌘",
 		"on-click": "/home/manuel/.config/wofi/power_menu.sh",
 		"on-click-right": "killall -9 wofi"
-	},
+	},	
  
     "wlr/workspaces": {
         "format": "{name}",
@@ -130,5 +130,13 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    }
+    },
+
+	"bluetooth": {
+		"controller": "blueman-manager",
+		"format": "{status} ",
+		"tooltip-format": "{device_alias} {device_address}",
+		"on-click": "blueman-manager",
+		"on-click-right": "killall blueman-manager"
+	}
 }

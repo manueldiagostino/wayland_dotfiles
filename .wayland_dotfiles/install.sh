@@ -88,6 +88,13 @@ cd wlrobs-hg/
 makepkg -si
 cd ..
 
+#Blueman
+git clone https://aur.archlinux.org/blueman-git.git
+cd blueman-git/
+makepkg -si
+cd ..
+
+###############################################################
 
 # Remove files
 cd .. && rm -rf ./tmp_installer/

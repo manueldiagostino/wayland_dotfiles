@@ -64,7 +64,6 @@ window#waybar {
 
 
 
-
 #clock,
 #battery,
 #cpu,
@@ -76,7 +75,8 @@ window#waybar {
 #tray,
 #keyboard-state,
 #mode,
-#idle_inhibitor {
+#idle_inhibitor,
+#bluetooth {
     padding: 0 10px;
 }
 
