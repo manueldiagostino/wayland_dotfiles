@@ -16,3 +16,6 @@ alias tree='exa -T --icons'
 
 # git bare dotfiles
 alias dotf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+#hyprland
+alias hconf='vim $HOME/.config/hypr/hyprland.conf'
