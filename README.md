@@ -6,7 +6,7 @@
 
 <br>
 
-Hi, this is my personal linux-rice :)
+Hi, this is my personal 🐧 linux-rice 🐧 :)
 
 Assuming you have already installed Wayland on your distro, the following are **required**:
 - [Hyprland](https://github.com/hyprwm/Hyprland)
@@ -22,6 +22,8 @@ Assuming you have already installed Wayland on your distro, the following are **
 - [imv](https://github.com/eXeC64/imv)
 - [wlrobs-hg](https://aur.archlinux.org/wlrobs-hg.git)
 - [Blueman](https://wiki.archlinux.org/title/Blueman)
+- [v4l2loopback-dkms](https://github.com/umlaeute/v4l2loopback)
+- [wf-recorder](https://github.com/ammen99/wf-recorder)
 
 > Remember to change */home/manuel* in `.config/hypr/hyprland.conf` with your current home path.
 

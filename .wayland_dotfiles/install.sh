@@ -106,7 +106,9 @@ sudo cp ./.local/bin/hypr "$HOME/.local/bin/"
 mkdir -p "$HOME/Immagini/Sfondi/"
 cp ./Immagini/Sfondi/* "$HOME/Immagini/Sfondi/"
 
+yay -S dkms linux-headers v4l2loopback wf-recorder
 
+sudo usermod -aG video $(whoami)
 
 echo -e "\n\n\n"
 echo "*************"
