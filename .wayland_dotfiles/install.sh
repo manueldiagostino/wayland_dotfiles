@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sed -i "s|/home/manuel|$HOME|g" .config/hypr/hyprland.conf
 
 sudo pacman -Sy base-devel
 
@@ -10,6 +9,9 @@ mkdir -p "$HOME/.config/hypr/"
 mkdir -p "$HOME/.config/dunst/"
 mkdir -p "$HOME/.config/waybar/"
 mkdir -p "$HOME/.config/wofi/"
+
+cp ../.config/hypr/hyprlan.conf "$HOME/.config/hypr/"
+sed -i "s|/home/manuel|$HOME|g" .config/hypr/hyprland.conf
 
 # hyprland-git
 git clone https://aur.archlinux.org/hyprland-git.git

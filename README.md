@@ -35,6 +35,7 @@ Apps like Discord still doesn't support screensharing on Wayland. My personal so
 into it through `wf-recorder`; since Discord sees a flipped version of the screen from the virtual cam, I use `ffmpeg` to take that input and to output a straight stream into another virtual webcam.
 The commands are in `.config/hypr/stream.sh`.
 
+<!--
 ## Arch users only
 You can use
 ```
@@ -43,6 +44,7 @@ chmod +x install.sh
 ./install.sh
 ```
 to automate the entire installation in your *home* dir (*.rc* files not included).
+-->
 
 # Gallery
 ![screen1](https://github.com/manueldiagostino/wayland_dotfiles/blob/main/.wayland_dotfiles/screen_1.jpeg)

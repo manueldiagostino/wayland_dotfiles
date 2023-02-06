@@ -6,13 +6,18 @@
 
     "modules-left": ["custom/power_menu", "wlr/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "network", "bluetooth", "battery"],
+    "modules-right": ["idle_inhibitor", "custom/gammastep", "pulseaudio", "network", "bluetooth", "battery"],
    
 	"custom/power_menu": {
 		"format": "⌘",
 		"on-click": "/home/manuel/.config/wofi/power_menu.sh",
 		"on-click-right": "killall -9 wofi"
-	},	
+	},
+	
+	"custom/gammastep": {
+      "format": "🌡️",
+      "on-click": "~/.config/hypr/gammastep.sh toggle"
+ 	},
  
     "wlr/workspaces": {
         "format": "{name}",

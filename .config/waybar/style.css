@@ -64,6 +64,7 @@ window#waybar {
 
 
 
+
 #clock,
 #battery,
 #cpu,
@@ -76,7 +77,8 @@ window#waybar {
 #keyboard-state,
 #mode,
 #idle_inhibitor,
-#bluetooth {
+#bluetooth,
+#custom-gammastep {
     padding: 0 10px;
 }
 
