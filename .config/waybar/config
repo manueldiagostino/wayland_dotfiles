@@ -6,7 +6,7 @@
 
     "modules-left": ["custom/power_menu", "wlr/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["idle_inhibitor", "custom/gammastep", "pulseaudio", "network", "bluetooth", "battery"],
+    "modules-right": ["idle_inhibitor", "custom/wl-gammarelay-temperature", "custom/wl-gammarelay-brightness", "pulseaudio", "network", "bluetooth", "battery"],
    
 	"custom/power_menu": {
 		"format": "⌘",
@@ -14,10 +14,21 @@
 		"on-click-right": "killall -9 wofi"
 	},
 	
-	"custom/gammastep": {
-      "format": "🌡️",
-      "on-click": "~/.config/hypr/gammastep.sh toggle"
- 	},
+	"custom/wl-gammarelay-temperature": {
+   		"format": "{} ",
+		"exec": "wl-gammarelay --subscribe Temperature",
+		"on-click": "busctl --user -- set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 4000",
+		"on-click-right": "busctl --user -- set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 6500",
+   		"on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +100",
+    	"on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100"
+  	},
+
+  	"custom/wl-gammarelay-brightness": {
+    	"format": "{} ",
+		"exec": "wl-gammarelay --subscribe Brightness",
+    	"on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.02",
+    	"on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.02"
+  	},
  
     "wlr/workspaces": {
         "format": "{name}",

@@ -6,7 +6,7 @@
     border: none;
     font-family: Font Awesome, Roboto, Arial, sans-serif;
     font-size: 14px;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 window#waybar {
@@ -78,7 +78,9 @@ window#waybar {
 #mode,
 #idle_inhibitor,
 #bluetooth,
-#custom-gammastep {
+#custom-gammastep,
+#custom-wl-gammarelay-temperature,
+#custom-wl-gammarelay-brightness {
     padding: 0 10px;
 }
 
