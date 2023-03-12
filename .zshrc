@@ -21,3 +21,7 @@ alias dotf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias hconf='vim $HOME/.config/hypr/hyprland.conf'
 
 alias uni='cd ~/Documenti/UNI/22_23/'
+alias lab='uni;cd laboratorio_alg/ASD/laboratorio_6cfu'
+alias mdp='uni;cd metodologie_programmazione/MdP'
+alias fdi='uni;cd fondamenti_informatica/FdI'
+
