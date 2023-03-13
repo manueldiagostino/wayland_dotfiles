@@ -12,6 +12,9 @@ function handle {
 		hyprctl dispatch moveworkspacetomonitor "3 1"
 		hyprctl dispatch moveworkspacetomonitor "4 1"
 		hyprctl dispatch moveworkspacetomonitor "5 1"
+		sleep 2
+		hyprctl dispatch dpms off eDP-1
+		hyprctl dispatch workspace 1
 	elif [[ ${1:0:14} == "monitorremoved" ]]; then
 		hyprctl dispatch dpms on eDP-1
 		hyprctl dispatch moveworkspacetomonitor "1 0"
