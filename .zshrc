@@ -10,7 +10,7 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 fi
 alias config='/usr/bin/git --git-dir=/home/manuel/.dotfiles/ --work-tree=/home/manuel'
 alias ls='exa'
-alias ll='exa -lhg --icons'
+alias ll='exa -lhgH --icons'
 alias la='ll -a'
 alias tree='exa -T --icons'
 
@@ -24,4 +24,5 @@ alias uni='cd ~/Documenti/UNI/22_23/'
 alias lab='uni;cd laboratorio_alg/ASD/laboratorio_6cfu'
 alias mdp='uni;cd metodologie_programmazione/MdP'
 alias fdi='uni;cd fondamenti_informatica/FdI'
+alias lab_cons='uni;cd laboratorio_alg/code/consegne_lab'
 
