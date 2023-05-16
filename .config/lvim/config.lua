@@ -3,16 +3,12 @@
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
-local opts = { noremap = true, silent = true }
-local keymap = vim.api.nvim_set_keymap
-keymap("v", "p", '"_dP', opts)
+require "user.plugins"
+require "user.neoscroll"
+require "user.keymaps"
+require "user.options"
+-- require "user.indent-blankline"
 
-
-lvim.plugins = {
-  {"Mofiqul/dracula.nvim"},
-  {"Pocco81/auto-save.nvim"},
-}
-
+require('mini.animate').setup()
+-- colorscheme
 lvim.colorscheme = "dracula"
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
