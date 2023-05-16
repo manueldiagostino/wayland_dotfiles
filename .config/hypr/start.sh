@@ -9,6 +9,7 @@ killall xdg-desktop-portal
 sleep 2
 /usr/lib/xdg-desktop-portal-hyprland &
 sleep 1
+killall xdg-desktop-portal-kde
 
 hyprctl monitors | grep HDMI
 ret=$?
@@ -18,9 +19,14 @@ then
 	sleep 2
 	# hyprctl keyword monitor DP-1,1920x1080@60,0x0,1,mirror,eDP-1 && \
 	hyprctl keyword monitor DP-1,1920x1080@60,1920x0,1
-	hyprctl keyword wsbind 1,DP-1
-	hyprctl keyword wsbind 2,DP-1
-	hyprctl keyword wsbind 3,DP-1
+	
+	hyprctl keyword workspace 1, monitor:DP-1, default:true
+	hyprctl keyword workspace 2, monitor:DP-1
+	hyprctl keyword workspace 3, monitor:DP-1
+	hyprctl keyword workspace 4, monitor:DP-1
+	hyprctl keyword workspace 5, monitor:DP-1
+	hyprctl keyword workspace 6, monitor:DP-1
+
 	hyprctl dispatch dpms off eDP-1
 	hyprctl dispatch moveworkspacetomonitor "1 1"
 	hyprctl dispatch moveworkspacetomonitor "2 1"
