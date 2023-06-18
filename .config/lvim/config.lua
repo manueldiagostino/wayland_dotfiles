@@ -4,11 +4,12 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
 require "user.plugins"
-require "user.neoscroll"
+--require "user.neoscroll"
 require "user.keymaps"
 require "user.options"
--- require "user.indent-blankline"
+require "user.which-key"
+-- require "user.indent"
 
-require('mini.animate').setup()
+--require('mini.animate').setup()
 -- colorscheme
 lvim.colorscheme = "dracula"

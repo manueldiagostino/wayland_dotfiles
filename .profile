@@ -28,3 +28,4 @@ fi
 
 export GTK_THEME=Dracula
 
+. "$HOME/.cargo/env"

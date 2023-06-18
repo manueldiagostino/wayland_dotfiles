@@ -120,3 +120,4 @@ fi
 # config aliases
 hypr_dir='~/.config/hypr/'
 
+. "$HOME/.cargo/env"
