@@ -129,11 +129,6 @@
             :class "volumeBox"
             :orientation "h"   
             :space-evenly false
-            (button
-                :class "button-volume"
-                :onclick "pavucontrol &"
-                volumeIcon
-            )   
             (revealer
                 :transition "slideleft"
                 :reveal volume
@@ -149,6 +144,11 @@
                     :flipped true
                 ) 
             )
+            (button
+                :class "button-volume"
+                :onclick "pavucontrol &"
+                volumeIcon
+            )   
         )
     )
 )
@@ -165,11 +165,6 @@
             :class "micBox"
             :orientation "h"   
             :space-evenly false
-            (button
-                :class "button-mic"
-                :onclick "pavucontrol &"
-                micIcon
-            )   
             (revealer
                 :transition "slideleft"
                 :reveal mic
@@ -185,6 +180,11 @@
                     :flipped true
                 ) 
             )
+            (button
+                :class "button-mic"
+                :onclick "pavucontrol &"
+                micIcon
+            )   
         )
     )
 )
@@ -213,7 +213,7 @@
 
 (defvar brightness false)
 (defpoll currBrightness :interval "0.5s" "scripts/brightness.sh get")
-(defpoll brightnessIcon :interval "0.5s" "scripts/gamma.sh get")
+(deflisten brightnessIcon :initial "" `tail -F ./tmp/gamma`)
 
 
 (defwidget brightnessWidget []    
@@ -224,11 +224,6 @@
             :class "brightnessBox"
             :orientation "h"   
             :space-evenly false
-            (button
-                :class "button-brightness"
-                :onclick "scripts/gamma.sh set"
-                brightnessIcon
-            )   
             (revealer
                 :transition "slideleft"
                 :reveal brightness
@@ -243,6 +238,11 @@
                     :onchange "scripts/brightness.sh {}" 
                     :flipped true
                 ) 
+            )
+            (button
+                :class "button-brightness"
+                :onclick "scripts/gamma.sh set"
+                brightnessIcon
             )
         )
     )
