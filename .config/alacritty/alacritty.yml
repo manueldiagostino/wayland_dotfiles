@@ -74,13 +74,13 @@ shell:
 # Font configuration
 font:
     normal:
-        family: 'Hack'
+        family: 'JetBrains Mono'
         style: regular
     bold:
-        family: 'Hack'
+        family: 'JetBrains Mono'
         style: bold
     italic:
-        family: 'Hack'
+        family: 'JetBrains Mono'
         style: italic
     size: 11.5
 
@@ -99,4 +99,4 @@ mouse:
 cursor:
     style:
         shape: Beam
-        blinking: on
+        blinking: On
