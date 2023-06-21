@@ -213,6 +213,7 @@
 
 (defvar brightness false)
 (defpoll currBrightness :interval "0.5s" "scripts/brightness.sh get")
+(defpoll brightnessIcon :interval "0.5s" "scripts/gamma.sh get")
 
 
 (defwidget brightnessWidget []    
@@ -225,8 +226,8 @@
             :space-evenly false
             (button
                 :class "button-brightness"
-                :onclick " "
-                ""
+                :onclick "scripts/gamma.sh set"
+                brightnessIcon
             )   
             (revealer
                 :transition "slideleft"

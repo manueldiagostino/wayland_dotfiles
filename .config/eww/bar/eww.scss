@@ -202,16 +202,17 @@ $backg-PowOffBtn: #ff2f00;
                 border-radius: 5px;
             }
             slider {
-                background-color: whitesmoke;
+                background-color: $yellow;
                 min-height: 8px;
                 min-width: 10px;
                 border-radius: 5px;
             }
             highlight {
-                background-color: whitesmoke;
+                background-color: $yellow;
                 min-height: 8px;
                 border-radius: 5px;
-            }        }
+            }        
+        }
     }
 }
 
