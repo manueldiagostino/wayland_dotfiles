@@ -118,8 +118,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defvar volume false)
-(defpoll volumeIcon :interval "0.5s" "pactl get-sink-volume 0 | awk \'{if ($5 == \"0%\") print \"\"; else print \"\";}\' | head -1")
-(defpoll currVolume :interval "1s" "pactl get-sink-volume 0 | awk \'{print $5}\' | tr -d '%'")
+(deflisten volumeIcon :initial "" `tail -F ./tmp/vol`)
+(defpoll currVolume :interval "1s" "./scripts/audio.sh get-volume")
 
 (defwidget volumeWidget []
     (eventbox
@@ -140,7 +140,7 @@
                     :max 101
                     :value "${currVolume}"
                     :min 0
-                    :onchange "pactl set-sink-volume 0 {}%" 
+                    :onchange "./scripts/audio.sh set-volume {}" 
                     :flipped true
                 ) 
             )
@@ -154,8 +154,8 @@
 )
 
 (defvar mic false)
-(defpoll micIcon :interval "0.5s" "pactl get-source-volume 0 | awk \'{if ($5 == \"0%\") print \"\"; else print \"\";}\' | head -1") 
-(defpoll currMic :interval "0.5s" " pactl get-source-volume 0 | awk '{print $5}' | tr -d '%' ")
+(deflisten micIcon :initial "" `tail -F ./tmp/mic`)  
+(defpoll currMic :interval "0.5s" "./scripts/audio.sh get-mic")
 
 (defwidget micWidget []
     (eventbox
@@ -176,7 +176,7 @@
                     :max 101
                     :value "${currMic}"
                     :min 0
-                    :onchange "pactl set-source-volume 0 {}%" 
+                    :onchange "./scripts/audio.sh set-mic {}" 
                     :flipped true
                 ) 
             )

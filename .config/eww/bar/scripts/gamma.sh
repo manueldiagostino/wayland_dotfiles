@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[[ ! -d "tmp" ]] && mkdir "tmp/"
+[[ ! -d "tmp" ]] && mkdir "tmp"
 
 val=$(busctl --user introspect rs.wl-gammarelay / rs.wl.gammarelay | grep ".Temperature" | tail -1 | awk '{print $4}')
 
