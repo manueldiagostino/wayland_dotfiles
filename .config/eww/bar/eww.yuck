@@ -153,6 +153,8 @@
     )
 )
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (defvar mic false)
 (deflisten micIcon :initial "" `tail -F ./tmp/mic`)  
 (defpoll currMic :interval "0.5s" "./scripts/audio.sh get-mic")
@@ -189,6 +191,7 @@
     )
 )
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defpoll wifiIcon :interval "1s" "scripts/wifi.sh icon")
 (defpoll wifiName :interval "1s" "scripts/wifi.sh name")
@@ -210,6 +213,8 @@
         )
     )
 )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defvar brightness false)
 (defpoll currBrightness :interval "0.5s" "scripts/brightness.sh get")
@@ -248,6 +253,46 @@
     )
 )
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget bluetoothWidget []
+    (box
+        :class "bluetoothBox"
+        :orientation "h"   
+        :space-evenly false
+        (button
+            :class "button-bluetooth"
+            :onclick "blueman-manager &"
+            ""
+        )
+    )
+)
+
+(defpoll batteryIcon :interval "5s" "scripts/battery.sh icon")
+(defpoll batteryValue :interval "5s" "scripts/battery.sh percent")
+(defpoll buttonStyle :interval "5s" "scripts/battery.sh button_style")
+(defpoll labelStyle :interval "5s" "scripts/battery.sh label_style")
+
+(defwidget batteryWidget []
+    (box
+        :class "batteryBox"
+        :orientation "h"   
+        :space-evenly false
+        (button
+            :class "button-battery"
+            :onclick " "
+            :style "${buttonStyle}" 
+            batteryIcon
+        )
+        (label
+            :class "label-battery"
+            :orientation "h"
+            :style "${labelStyle}"
+            :text "${batteryValue}%"
+        )
+    )
+)
+
 (defwidget ControlPanel []
     (box 
         :orientation "h"
@@ -257,6 +302,8 @@
         (micWidget)
         (wifiWidget)
         (brightnessWidget)
+        (bluetoothWidget)
+        (batteryWidget)
     )
 ) 
 

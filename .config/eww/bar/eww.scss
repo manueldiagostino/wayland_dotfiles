@@ -121,7 +121,7 @@ $backg-PowOffBtn: #ff2f00;
 
         .volumeBox {
             .button-volume {
-                color: $blue;
+                color: $magenta;
             }
             .scale-volume {
                 padding: 0px 5px;
@@ -135,13 +135,13 @@ $backg-PowOffBtn: #ff2f00;
                 border-radius: 5px;
             }
             slider {
-                background-color: $blue;
+                background-color: $magenta;
                 min-height: 8px;
                 min-width: 10px;
                 border-radius: 5px;
             }
             highlight {
-                background-color: $blue;
+                background-color: $magenta;
                 min-height: 8px;
                 border-radius: 5px;
             }
@@ -214,6 +214,13 @@ $backg-PowOffBtn: #ff2f00;
                 border-radius: 5px;
             }        
         }
+
+        .bluetoothBox {
+            .button-bluetooth {
+                color: $blue;
+            }
+        }
+
     }
 }
 
