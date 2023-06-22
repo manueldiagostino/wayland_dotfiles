@@ -29,7 +29,7 @@
         (button ; logout
             :class "button-logout"
             :tooltip "Log-out"
-            :onclick "hyprland dispatch exit"
+            :onclick "hyprctl dispatch exit"
             ""
         )
         (button ; lock
@@ -356,6 +356,22 @@
         (CenterBox)
         (RightBox)
     )
+)
+
+(defwindow bar_main
+    :monitor 0
+    :windowtype "dock"
+    :geometry (geometry 
+        :x "0%"
+        :y "0%"
+        :width "100%"
+        :height "30px"
+        :anchor "top center"
+    )
+    :reserve (struts :side "top" :distance "4%")
+    :exclusive true
+    :stacking "fg"
+    (bar)
 )
 
 
