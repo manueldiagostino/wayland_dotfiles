@@ -327,9 +327,10 @@
         :orientation "h"
         :halign "center"
         :space-evenly false
-        (label  
+        (button
             :class "hour" 
-            :text "${time.hour} : ${time.min}"
+            :onclick "scripts/popup.sh calendar"
+            "${time.hour} : ${time.min}"
         )
     )
 )
@@ -389,4 +390,31 @@
     :exclusive true
     :stacking "fg"
     (bar)
+)
+
+(defwidget calendarWidget []
+	(box :class "calendarBox" 
+		 :orientation "v"
+	(box :class "calendarInnerBox"
+	(calendar :class "calendar" 
+			  :day calendar_day 
+			  :month calendar_month 
+			  :year calendar_year))))
+(defpoll calendar_day :interval "10h"
+    "date '+%d'")
+(defpoll calendar_month :interval "10h"
+    "scripts/calendar.sh")
+(defpoll calendar_year :interval "10h"
+    "date '+%Y'")
+
+(defwindow calendar
+    :monitor 1
+    :geometry (geometry
+        :anchor "top center"
+        :x "44%"
+        :y "15px"
+        :width "16%"
+        :height "150px"
+    )
+    (calendarWidget)
 )
