@@ -6,7 +6,7 @@ symbol() {
 }
 
 name() {
-    nmcli | grep "^wlp" | awk '{print $4}'
+    nmcli | grep "^wlp" | cut -d " " -f 4-  
 }
 
 [ "$1" = "icon" ] && symbol && exit
