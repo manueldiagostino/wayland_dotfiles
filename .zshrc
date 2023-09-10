@@ -38,6 +38,7 @@ alias mdp='uni;cd metodologie_programmazione/MdP'
 alias fdi='uni;cd fondamenti_informatica/FdI'
 alias lab_cons='uni;cd laboratorio_alg/code/consegne_lab'
 alias calc='uni;cd calcolo_numerico/CN'
+alias itcloud='uni;cd amministrazione_cloud'
 
 alias open='xdg-open'
 
@@ -45,3 +46,5 @@ alias open='xdg-open'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH="$HOME/bin:$PATH"
+
+alias vim='lvim'

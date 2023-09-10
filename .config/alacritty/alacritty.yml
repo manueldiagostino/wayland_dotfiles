@@ -12,7 +12,8 @@ env:
 
 colors:
   primary:
-    background: '#1e1f29'
+    #background: '#1e1f29'
+    background: '#282a36'
     foreground: '#f8f8f2'
     bright_foreground: '#ffffff'
   cursor:
@@ -100,3 +101,7 @@ cursor:
     style:
         shape: Beam
         blinking: On
+window:
+  padding:
+    x: 20
+    y: 20

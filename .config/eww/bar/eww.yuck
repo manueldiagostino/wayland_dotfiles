@@ -23,7 +23,7 @@
         (button ; suspend
             :class "button-suspend"
             :tooltip "Suspend"
-            :onclick "systemctl suspend"
+            :onclick "sleep 2 && ~/.config/hypr/lock.sh && systemctl suspend 1>&2 &2>>/home/manuel/tmp/log.txt"
             ""
         )
         (button ; logout
