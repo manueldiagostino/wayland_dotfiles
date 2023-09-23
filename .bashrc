@@ -121,3 +121,5 @@ fi
 hypr_dir='~/.config/hypr/'
 
 . "$HOME/.cargo/env"
+
+

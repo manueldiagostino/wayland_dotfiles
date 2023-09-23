@@ -11,8 +11,10 @@ coordinates=$(slurp)
 echo $monitor_name
 echo $coordinates
 
-newfile_path="$HOME/Immagini/Screenshot/$(date '+%y%m%d_%Hh%Mm%Ss').jpeg"
+newfile_path="$HOME/Immagini/Screenshot/$(date '+%y%m%d_%Hh%Mm%Ss').png"
 
-grim -t jpeg -q 100 -o $monitor_name -g "$coordinates" $newfile_path
+#grim -t png -o $monitor_name -g "$coordinates" $newfile_path
+wayshot -f $newfile_path -s "$coordinates"
 imv $newfile_path &
 dunstify -a "screenshot" -h string:x-dunst:screen "Screenshot saved"
+wl-copy -t image/png < $newfile_path

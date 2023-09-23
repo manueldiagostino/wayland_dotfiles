@@ -32,13 +32,14 @@ alias dotf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 #hyprland
 alias hconf='vim $HOME/.config/hypr/hyprland.conf'
 
-alias uni='cd ~/Documenti/UNI/22_23/'
+alias uni='cd ~/Documenti/UNI/23_24/'
 alias lab='uni;cd laboratorio_alg/ASD/laboratorio_6cfu'
 alias mdp='uni;cd metodologie_programmazione/MdP'
 alias fdi='uni;cd fondamenti_informatica/FdI'
 alias lab_cons='uni;cd laboratorio_alg/code/consegne_lab'
 alias calc='uni;cd calcolo_numerico/CN'
 alias itcloud='uni;cd amministrazione_cloud'
+alias reti='uni;cd reti_di_calcolatori'
 
 alias open='xdg-open'
 
@@ -48,3 +49,4 @@ alias open='xdg-open'
 export PATH="$HOME/bin:$PATH"
 
 alias vim='lvim'
+alias sshuni='ssh manuel.diagostino@studenti.unipr.it@didattica-linux.unipr.it'
