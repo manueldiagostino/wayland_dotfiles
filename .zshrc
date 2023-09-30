@@ -50,3 +50,6 @@ export PATH="$HOME/bin:$PATH"
 
 alias vim='lvim'
 alias sshuni='ssh manuel.diagostino@studenti.unipr.it@didattica-linux.unipr.it'
+
+# opam configuration
+[[ ! -r /home/manuel/.opam/opam-init/init.zsh ]] || source /home/manuel/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
