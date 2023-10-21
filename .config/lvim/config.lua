@@ -13,3 +13,4 @@ require "user.which-key"
 --require('mini.animate').setup()
 -- colorscheme
 lvim.colorscheme = "dracula"
+

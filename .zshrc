@@ -40,16 +40,23 @@ alias lab_cons='uni;cd laboratorio_alg/code/consegne_lab'
 alias calc='uni;cd calcolo_numerico/CN'
 alias itcloud='uni;cd amministrazione_cloud'
 alias reti='uni;cd reti_di_calcolatori'
+alias tir='uni;cd tirocinio'
 
 alias open='xdg-open'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH="$HOME/bin:$PATH"
+export PATH="$PATH:$HOME/bin"
 
 alias vim='lvim'
 alias sshuni='ssh manuel.diagostino@studenti.unipr.it@didattica-linux.unipr.it'
 
 # opam configuration
 [[ ! -r /home/manuel/.opam/opam-init/init.zsh ]] || source /home/manuel/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+export MY_JAVA_LIB="/usr/lib:/usr/local/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib:/usr/local/lib:/usr/lib/jvm/java-21-openjdk/lib
+
+# export CAML_LD_LIBRARY_PATH="/usr/local/lib:$CAML_LD_LIBRARY_PATH

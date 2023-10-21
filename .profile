@@ -29,3 +29,4 @@ fi
 export GTK_THEME=Dracula
 
 . "$HOME/.cargo/env"
+export QT_STYLE_OVERRIDE=kvantum
