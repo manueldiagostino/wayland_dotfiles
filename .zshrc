@@ -40,7 +40,7 @@ alias lab_cons='uni;cd laboratorio_alg/code/consegne_lab'
 alias calc='uni;cd calcolo_numerico/CN'
 alias itcloud='uni;cd amministrazione_cloud'
 alias reti='uni;cd reti_di_calcolatori'
-alias tir='uni;cd tirocinio'
+alias tir='uni;cd tirocinio_mopsa'
 
 alias open='xdg-open'
 
@@ -60,3 +60,5 @@ export MY_JAVA_LIB="/usr/lib:/usr/local/lib:/usr/java/packages/lib:/usr/lib64:/l
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib:/usr/local/lib:/usr/lib/jvm/java-21-openjdk/lib
 
 # export CAML_LD_LIBRARY_PATH="/usr/local/lib:$CAML_LD_LIBRARY_PATH
+
+setopt extended_glob

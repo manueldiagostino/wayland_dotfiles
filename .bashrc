@@ -124,3 +124,4 @@ hypr_dir='~/.config/hypr/'
 
 # export LD_LIBRARY_PATH=/usr/lib/:/usr/local/lib:$LD_LIBRARY_PATH:$HOME
 # export CAML_LD_LIBRARY_PATH=/usr/local/lib:$CAML_LD_LIBRARY_PATH
+shopt -s extglob
