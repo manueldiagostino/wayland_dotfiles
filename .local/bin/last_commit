@@ -1,0 +1,32 @@
+#!/bin/bash
+
+LINES=10
+USER='@manueldiagostino'
+
+Help() {
+    echo "Syntax: scriptTemplate [-g|h|v|V]"
+    echo "options:"
+    echo "h     Print this Help."
+    echo "n     Set number of commits"
+    echo "u     Set username"
+    echo
+}
+
+# Get the options
+while getopts ":hn:u:" option; do
+    case $option in
+        h) # display Help
+            Help
+            exit;;
+        n) 
+            LINES="$OPTARG";;
+        u) 
+            USER="$OPTARG";;
+        \?) # Invalid option
+            echo "Error: Invalid option"
+            exit;;
+   esac
+done
+
+# echo $LINES $USER
+git show --format=%B -n ${LINES} -s | grep ${USER} | cut -d ':' -f2 | sed 's/^ //' 
