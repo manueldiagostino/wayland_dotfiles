@@ -29,4 +29,4 @@ while getopts ":hn:u:" option; do
 done
 
 # echo $LINES $USER
-git show --format=%B -n ${LINES} -s | grep ${USER} | cut -d ':' -f2 | sed 's/^ //' 
+git show --format=%B -n ${LINES} -s | grep ${USER} | cut -d ':' -f2 | sed 's/^ /- /' 

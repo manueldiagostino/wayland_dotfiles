@@ -2,7 +2,7 @@
 
 function handle {
 	if [[ ${1:0:12} == "monitoradded" ]]; then
-    	hyprctl keyword monitor DP-1,1920x1080@60,1920x0,1
+    	hyprctl keyword monitor DP-1,1920x1080@60,0x1920,1
         hyprctl keyword workspace 1, monitor:DP-1, default:true
         hyprctl keyword workspace 2, monitor:DP-1
         hyprctl keyword workspace 3, monitor:DP-1
